@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>asyncmain</Title>
+      <Shortcut>asyncmain</Shortcut>
+      <Description>Code snippet for 'Async' in Main method</Description>
+      <Author>Suneel Podapati</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>type</ID>
+          <ToolTip>Type to return from async method</ToolTip>
+          <Default>object</Default>
+        </Literal>
+        <Literal>
+          <ID>variable</ID>
+          <ToolTip>variable to hold the result of async method</ToolTip>
+          <Default>asyncResult</Default>
+        </Literal>
+        <Literal>
+          <ID>method</ID>
+          <ToolTip>Async Method to be called</ToolTip>
+          <Default>Method</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[$type$ $variable$ = Task.Run($method$).GetAwaiter().GetResult();$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>from</Title>
+      <Shortcut>from</Shortcut>
+      <Description>Code snippet for LINQ Query</Description>
+      <Author>Suneel Podapati</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>queryResult</ID>
+          <ToolTip>Query result variable</ToolTip>
+          <Default>queryResult</Default>
+        </Literal>
+        <Literal>
+          <ID>obj</ID>
+          <ToolTip>Query Range variable</ToolTip>
+          <Default>obj</Default>
+        </Literal>
+        <Literal>
+          <ID>list</ID>
+          <ToolTip>Query Source</ToolTip>
+          <Default>list</Default>
+        </Literal>
+        <Literal>
+          <ID>query</ID>
+          <ToolTip>Query to be performed</ToolTip>
+          <Default>select </Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[var $queryResult$ = from $obj$ in $list$
+                                     $query$ $end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

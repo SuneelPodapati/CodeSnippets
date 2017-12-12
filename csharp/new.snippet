@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>new</Title>
+      <Shortcut>new</Shortcut>
+      <Description>Code snippet for new object</Description>
+      <Author>Suneel Podapati</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>type</ID>
+          <ToolTip>Type of object</ToolTip>
+          <Default>object</Default>
+        </Literal>
+        <Literal>
+          <ID>variable</ID>
+          <ToolTip>Variable name</ToolTip>
+          <Default>obj</Default>
+        </Literal>
+        <Literal>
+          <ID>params</ID>
+          <ToolTip>Parameters for parametric constructor</ToolTip>
+          <Default></Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[$type$ $variable$ = new $type$($params$);$end$ ]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

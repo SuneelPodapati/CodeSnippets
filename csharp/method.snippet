@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>method</Title>
+      <Shortcut>method</Shortcut>
+      <Description>Code snippet for method</Description>
+      <Author>Suneel Podapati</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>access</ID>
+          <ToolTip>Access modifier</ToolTip>
+          <Default>public</Default>
+        </Literal>
+        <Literal>
+          <ID>type</ID>
+          <ToolTip>Type of method</ToolTip>
+          <Default>new</Default>
+        </Literal>
+        <Literal>
+          <ID>returnType</ID>
+          <ToolTip>Return type of the method</ToolTip>
+          <Default>void</Default>
+        </Literal>
+        <Literal>
+          <ID>method</ID>
+          <ToolTip>Method Name</ToolTip>
+          <Default>Method</Default>
+        </Literal>
+        <Literal>
+          <ID>params</ID>
+          <ToolTip>Method parameters</ToolTip>
+          <Default></Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[$access$ $type$ $returnType$ $method$($params$)
+	{
+		$selected$ $end$
+	} ]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
